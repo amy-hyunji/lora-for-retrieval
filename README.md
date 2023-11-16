@@ -2,6 +2,26 @@
 
 This repository contains the code for our work on LoRA for retrieval. 
 
+### Setup
+
+To create the environment, run:
+
+```
+conda create -n 'lora-for-retrieval' python=3.8
+conda activate lora-for-retrieval
+```
+
+To install dependencies, run:
+```
+pip install -e .'[dev]'
+```
+
+To run tests, run:
+```
+pytest tests
+```
+
+
 ### Usage
 
 TBD code coming soon!

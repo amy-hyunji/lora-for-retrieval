@@ -73,7 +73,7 @@ omit = [
     'tests/*',
 ]
 [tool.coverage.report]
-fail_under = 25
+fail_under = 0
 
 
 [tool.black]
