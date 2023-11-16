@@ -1,6 +1,6 @@
 # LoRA for Retrieval
 
-This repository contains the code for our work on LoRA for retrieval. 
+This repository contains the code for our work on LoRA for retrieval. This work was conducted while Hyunji Lee was an intern at the Allen Institute for AI.
 
 ### Setup
 
@@ -26,9 +26,9 @@ pytest tests
 
 TBD code coming soon!
 
-### Citation
+### Learn more about our work
 
-To read more about our work, check out our paper under `paper/`. If you find our work useful, please cite us:
+Check out <a href="https://github.com/amy-hyunji/lora-for-retrieval/tree/main/paper/hyunji-lee-back-to-basics-simple-recipes-for-ood-retrieval.pdf">our paper</a>. If you find our work useful, please cite us:
 
 ```
 @article{hyunji-lee-lora-retrieval-2023,
