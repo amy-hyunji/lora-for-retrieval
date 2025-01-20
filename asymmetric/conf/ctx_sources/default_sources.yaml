@@ -1,0 +1,81 @@
+# @package _group_
+
+dpr_wiki:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: data.wikipedia_split.psgs_w100
+  id_prefix: "wiki:"
+
+beir_scifact:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./scifact/corpus.tsv
+  id_prefix: ""
+
+beir_scidocs:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./scidocs/corpus.tsv
+  id_prefix: ""
+
+beir_nq:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./nq/corpus.tsv
+  id_prefix: ""
+
+beir_hotpotqa:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./hotpotqa/corpus.tsv
+  id_prefix: ""
+
+beir_msmarco:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./msmarco/corpus.tsv
+  id_prefix: ""
+
+beir_arguana:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./arguana/corpus.tsv
+  id_prefix: ""
+
+beir_fiqa:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./fiqa/corpus.tsv
+  id_prefix: ""
+
+beir_touche_2020:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./touche_2020/corpus.tsv
+  id_prefix: ""
+
+beir_quora:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./quora/corpus.tsv
+  id_prefix: ""
+
+beir_dbpedia:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./dbpedia/corpus.tsv
+  id_prefix: ""
+
+beir_fever:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./fever/corpus.tsv
+  id_prefix: ""
+
+beir_climate_fever:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./climate_fever/corpus.tsv
+  id_prefix: ""
+
+beir_nfcorpus:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./nfcorpus/corpus.tsv
+  id_prefix: ""
+
+dpr_citance:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./citance/corpus.tsv
+  id_prefix: "abstract:"
+
+beir_trec_covid:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: ./trec_covid/corpus.tsv
+  id_prefix: ""

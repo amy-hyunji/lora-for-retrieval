@@ -1,0 +1,14 @@
+beir
+pandas
+tqdm
+numpy
+transformers
+tokenizers
+torch
+datasets
+peft
+jsonlines
+scikit-learn
+pytorch_lightning 
+wandb
+pickle

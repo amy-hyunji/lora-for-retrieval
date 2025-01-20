@@ -1,0 +1,184 @@
+# @package _group_
+
+beir_touche_2020_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./touche_2020/test.csv
+  #query_special_suffix: '?'
+
+beir_touche_2020_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./touche_2020/total.csv
+  #query_special_suffix: '?'
+
+beir_fever_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./fever/test.csv
+  #query_special_suffix: '?'
+
+beir_fever_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./fever/total.csv
+  #query_special_suffix: '?'
+
+beir_msmarco_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./msmarco/test.csv
+  #query_special_suffix: '?'
+
+beir_msmarco_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./msmarco/train.csv
+  #query_special_suffix: '?'
+
+beir_msmarco_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./msmarco/total.csv
+  #query_special_suffix: '?'
+
+beir_climate_fever_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./climate_fever/test.csv
+  #query_special_suffix: '?'
+
+beir_climate_fever_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./climate_fever/total.csv
+  #query_special_suffix: '?'
+
+beir_quora_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./quora/test.csv
+  #query_special_suffix: '?'
+
+beir_quora_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./quora/total.csv
+  #query_special_suffix: '?'
+
+beir_dbpedia_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./dbpedia/test.csv
+  #query_special_suffix: '?'
+
+beir_dbpedia_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./dbpedia/total.csv
+  #query_special_suffix: '?'
+
+beir_trec_covid_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./trec_covid/test.csv
+  #query_special_suffix: '?'
+
+beir_trec_covid_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./trec_covid/total.csv
+  #query_special_suffix: '?'
+
+beir_scifact_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./scifact/test.csv
+  #query_special_suffix: '?'
+
+beir_arguana_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./arguana/test.csv
+  #query_special_suffix: '?'
+
+beir_hotpotqa_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./hotpotqa/test.csv
+  #query_special_suffix: '?'
+
+beir_nq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./nq/test.csv
+  #query_special_suffix: '?'
+
+beir_fiqa_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./fiqa/test.csv
+  #query_special_suffix: '?'
+
+beir_scidocs_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./scidocs/test.csv
+  #query_special_suffix: '?'
+
+beir_nfcorpus_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./nfcorpus/test.csv
+  #query_special_suffix: '?'
+
+beir_scifact_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./scifact/total.csv
+  #query_special_suffix: '?'
+
+beir_arguana_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./arguana/total.csv
+  #query_special_suffix: '?'
+
+beir_hotpotqa_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./hotpotqa/total.csv
+  #query_special_suffix: '?'
+
+beir_nq_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./nq/total.csv
+  #query_special_suffix: '?'
+
+beir_fiqa_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./fiqa/total.csv
+  #query_special_suffix: '?'
+
+beir_scidocs_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./scidocs/total.csv
+  #query_special_suffix: '?'
+
+beir_nfcorpus_total:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./nfcorpus/total.csv
+  #query_special_suffix: '?'
+
+scifact_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: ./scifact/test.csv
+  #query_special_suffix: '?'
+
+nq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-test
+  #query_special_suffix: '?'
+
+nq_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-train
+
+nq_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-dev
+
+trivia_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-test
+
+trivia_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-train
+
+trivia_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-dev
+
+webq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.webq-test
+
+curatedtrec_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.curatedtrec-test

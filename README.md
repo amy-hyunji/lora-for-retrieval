@@ -1,40 +1,41 @@
-# LoRA for Retrieval
+# simple-recipe-to-improve-OOD
 
-This repository contains the code for our work on LoRA for retrieval. This work was conducted while Hyunji Lee was an intern at the Allen Institute for AI.
+This repository contains the code for ```[A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders](https://arxiv.org/abs/2311.09765)```
 
-### Setup
+![alt text](fig/fig1.png "Main Figure")
 
-To create the environment, run:
+We recommend a simple recipe for training dense encoders to improve out-of-domain performance:
+1. Train with parameter-efficient methods such as LoRA rather than full-finetuning
+2. opt for using in-batch negatives unless given well-constructed hard negatives.
 
+We conduct a series of carefully designed experiments over the recipes and could see that our findings hold for various cases such as adopting larger base models, different retriever architectures (e.g., late interaction models), and additional contrastive pretraining of the base model (e.g., pre-trained Contriever)
+
+## Requirements
 ```
-conda create -n 'lora-for-retrieval' python=3.8
-conda activate lora-for-retrieval
-```
-
-To install dependencies, run:
-```
-pip install -e .'[dev]'
-```
-
-To run tests, run:
-```
-pytest tests
+pip install -r requirements.txt
 ```
 
+## Dataset
+### Train Dataset
+* [MSMARCO](https://microsoft.github.io/msmarco/)
+* [NQ](https://github.com/facebookresearch/DPR)
+### Test Dataset
+* [Beir](https://github.com/beir-cellar/beir)
 
-### Usage
+### Negative Sampling
+* [MSMARCO](https://microsoft.github.io/msmarco/)
+* Random
+* BM25
+* self-distillation
+* self-distillation with denoising step
+* [RocketQA](https://github.com/PaddlePaddle/RocketQA)
 
-TBD code coming soon!
+## Train / Inference
 
-### Learn more about our work
+We divide the files by the dense retriever architectures we experiment over: asymmetric, symmetric, and late interaction.
+For each, the code base is from [DPR](https://github.com/facebookresearch/DPR), [contriever](https://github.com/facebookresearch/contriever), and [Colbert](https://github.com/stanford-futuredata/ColBERT), as we follow the architectural design from each model. 
 
-Check out <a href="https://github.com/amy-hyunji/lora-for-retrieval/tree/main/paper/hyunji-lee-back-to-basics-simple-recipes-for-ood-retrieval.pdf">our paper</a>. If you find our work useful, please cite us:
-
-```
-@article{hyunji-lee-lora-retrieval-2023,
-  title={Back to Basics: A Simple Recipe for Improving Out-of-Domain Retrieval in Dense Encoders},
-  author={Lee, Hyunji and Soldaini, Luca Soldaini and Cohan, Arman and Seo, Minjoon and Lo, Kyle},
-  journal={ArXiv},
-  year={2023}
-}
-```
+Details of how to run the models are under each folder:
+* [asymmetric](https://github.com/amy-hyunji/simple-recipe-to-improve-OOD/blob/main/asymmetric/README.md)
+* [symmetric](https://github.com/amy-hyunji/simple-recipe-to-improve-OOD/blob/main/symmetric/README.md)
+* [late-interaction](https://github.com/amy-hyunji/simple-recipe-to-improve-OOD/blob/main/late-interaction/README.md)

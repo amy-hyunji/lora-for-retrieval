@@ -1,0 +1,117 @@
+# @package _group_
+
+scifact_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./scifact/train.json
+
+scifact_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./scifact/dev.json
+
+msmarco_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./data/msmarco/train.json
+
+msmarco_train_neg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./data/msmarco/train.w_neg.json
+
+msmarco_train_randomneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/train.random_neg.json
+
+msmarco_train_BM25neg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/train.w_neg.json
+
+msmarco_train_llama_BM25neg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/llama_filter/train.bm25neg.json
+
+msmarco_train_llama_fullneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/llama_filter/train.fullneg.json
+
+msmarco_train_llama_loraneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/llama_filter/train.loraneg.json
+
+msmarco_train_rocketqa_BM25neg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/rocketqa_filter/bm25_result.json
+
+msmarco_train_rocketqa_fullneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/rocketqa_filter/full_result.json
+
+msmarco_train_rocketqa_loraneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/rocketqa_filter/lora_result.p.json
+
+msmarco_train_rocketqa_fullneg2:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/rocketqa_filter/full_result.top100.json
+
+msmarco_train_rocketqa_loraneg2:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/rocketqa_filter/lora_result.top100.json
+
+msmarco_train_rocketqaneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/msmarco.w_rocketqa_neg.json
+
+msmarco_train_fullneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/msmarco.w_full_neg.json
+
+msmarco_train_loraneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./msmarco/msmarco.w_lora_neg.json
+
+msmarco_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./data/msmarco/dev.json
+
+nq_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./data/retriever/nq-train.json
+
+nq_train_hn1:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./data/retriever/nq-adv-hn-train.json
+
+nq_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: ./data/retriever/nq-dev.json
+
+trivia_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.trivia-train
+
+trivia_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.trivia-dev
+
+squad1_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.squad1-train
+
+squad1_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.squad1-dev
+
+webq_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.webq-train
+
+webq_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.webq-dev
+
+curatedtrec_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.curatedtrec-train
+
+curatedtrec_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.curatedtrec-dev
